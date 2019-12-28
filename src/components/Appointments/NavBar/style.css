@@ -1,0 +1,16 @@
+.signIn {
+  height: 100px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: -10px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+}

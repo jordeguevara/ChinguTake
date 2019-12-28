@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Main from "./components/Main";
+import { firebaseKey } from "./private";
+const firebaseConfig = {
+  apiKey: firebaseKey,
+  authDomain: "ecalander-3a4e2.firebaseapp.com",
+  databaseURL: "https://ecalander-3a4e2.firebaseio.com",
+  projectId: "ecalander-3a4e2",
+  storageBucket: "ecalander-3a4e2.appspot.com",
+  messagingSenderId: "131815193938",
+  appId: "1:131815193938:web:937bac8e2c7be2e2264e8b",
+  measurementId: "G-XVDZRW2PFV"
+};
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Main />;
 }
 
 export default App;
